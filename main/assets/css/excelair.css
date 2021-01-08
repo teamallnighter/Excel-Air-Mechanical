@@ -12,7 +12,7 @@
 }
 
 .about-customer-logos{
-    margin: 10vh; 10vw;
+    margin: 10vh 10vw;
 }
 
 .fad{
@@ -38,3 +38,23 @@
     box-shadow: 2px 4px 8px grey
 }
 
+.about-quote{
+    height: 100vh;
+}
+
+.about-team{
+    height: 100vh;
+    margin: 5vh 0vw;
+}
+
+.about-location{
+    margin: 5vh 0vw;
+}
+
+.about-location-wrapper{
+    margin: 5vh 0vw;
+}
+
+.about-history{
+    margin: 20vh 15vw;
+}
