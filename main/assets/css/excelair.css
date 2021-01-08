@@ -1,3 +1,40 @@
 #services{
+    height: 50vh;
+}
+
+#serviceslist{
+    margin: 10vh 0vw;
+    margin-bottom: 25vh;
+}
+
+.about-wrapper{
     height: 100vh;
 }
+
+.about-customer-logos{
+    margin: 10vh; 10vw;
+}
+
+.fad{
+    font-size: 2rem;
+}
+
+.form-wrapper{
+    margin: 10vh 15vw;
+}
+
+.call-to-action{
+    color: white;
+    margin-bottom: 25vh;
+    box-shadow: 2px 4px 8px grey;
+    background-color: #4E5467;
+}
+
+.emergency-button{
+    box-shadow: 1px 2px 4px grey;
+}
+
+.emergency-button:hover{
+    box-shadow: 2px 4px 8px grey
+}
+

@@ -1,117 +1,510 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>document.getElementsByTagName("html")[0].className += " js";</script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link id="codyframe" rel="stylesheet" href="assets/css/style.css">
-  <link id="excelairdotcss" rel="stylesheet" href="assets/css/excelair.css">
-
-  <!-- Uncomment the script below if you need to support browsers where CSS Variables have not been implemented (e.g., IE11) -->
-  <!-- <script>
-    if(!('CSS' in window) || !CSS.supports('color', 'var(--color-var)')) {var cfStyle = document.getElementById('codyframe');if(cfStyle) {var href = cfStyle.getAttribute('href');href = href.replace('style.css', 'style-fallback.css');cfStyle.setAttribute('href', href);}}
-  </script> -->
-  <title>HVAC Calgary - Excel Air Mechanical</title>
-</head>
-<body>
-  <header>
-    <header class="header position-relative js-header ">
-      <div class="header__container container max-width-lg">
-        <div class="header__logo">
-          <a href="#0">
-            <svg width="104" height="30" viewBox="0 0 104 30"><title>Go to homepage</title><path d="M37.54 24.08V3.72h4.92v16.37h8.47v4zM60.47 24.37a7.82 7.82 0 01-5.73-2.25 8.36 8.36 0 01-2-5.62 8.32 8.32 0 012.08-5.71 8 8 0 015.64-2.18 8.07 8.07 0 015.68 2.2 8.49 8.49 0 012 5.69 8.63 8.63 0 01-1.78 5.38 7.6 7.6 0 01-5.89 2.49zm0-3.67c2.42 0 2.73-3 2.73-4.23s-.31-4.26-2.73-4.26-2.79 3-2.79 4.26.32 4.23 2.82 4.23zM95.49 24.37a7.82 7.82 0 01-5.73-2.25 8.36 8.36 0 01-2-5.62 8.32 8.32 0 012.08-5.71 8.4 8.4 0 0111.31 0 8.43 8.43 0 012 5.69 8.6 8.6 0 01-1.77 5.38 7.6 7.6 0 01-5.89 2.51zm0-3.67c2.42 0 2.73-3 2.73-4.23s-.31-4.26-2.73-4.26-2.8 3-2.8 4.26.31 4.23 2.83 4.23zM77.66 30c-5.74 0-7-3.25-7.23-4.52l4.6-.26c.41.91 1.17 1.41 2.76 1.41a2.45 2.45 0 002.82-2.53v-2.68a7 7 0 01-1.7 1.75 6.12 6.12 0 01-5.85-.08c-2.41-1.37-3-4.25-3-6.66 0-.89.12-3.67 1.45-5.42a5.67 5.67 0 014.64-2.4c1.2 0 3 .25 4.46 2.82V8.81h4.85v15.33a5.2 5.2 0 01-2.12 4.32A9.92 9.92 0 0177.66 30zm.15-9.66c2.53 0 2.81-2.69 2.81-3.91s-.31-4-2.81-4-2.81 2.8-2.81 4 .27 3.91 2.81 3.91zM55.56 3.72h9.81v2.41h-9.81z" fill="var(--color-contrast-higher)"/><circle cx="15" cy="15" r="15" fill="var(--color-primary)"/></svg>
-          </a>
-        </div>
-    
-        <button class="btn btn--subtle header__trigger js-header__trigger" aria-label="Toggle menu" aria-expanded="false" aria-controls="header-nav">
-          <i class="header__trigger-icon" aria-hidden="true"></i>
-          <span>Menu</span>
-        </button>
-    
-        <nav class="header__nav js-header__nav" id="header-nav" role="navigation" aria-label="Main">
-          <div class="header__nav-inner">
-            <div class="header__label">Main menu</div>
-            <ul class="header__list">
-              <li class="header__item"><a href="#0" class="header__link">Services</a></li>
-              <li class="header__item"><a href="#0" class="header__link">About Us</a></li>
-              <li class="header__item"><a href="#0" class="header__link">Resources</a></li>
-              <li class="header__item"><a href="#0" class="header__link">Contact Us</a></li>
-              <li class="header__item header__item--divider" aria-hidden="true"></li>
-              <li class="header__item"><a href="#0" class="btn btn--primary">Emergency After Hours</a></li>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script>document.getElementsByTagName("html")[0].className += " js";</script>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link id="codyframe" rel="stylesheet" href="assets/css/style.css">
+      <link id="excelairdotcss" rel="stylesheet" href="assets/css/excelair.css">
+      <script src="https://kit.fontawesome.com/afbc9e4cf8.js" crossorigin="anonymous"></script>
+      <title>HVAC Calgary - Excel Air Mechanical</title>
+   </head>
+   <body>
+      <header>
+      <header class="header position-relative js-header ">
+         <div class="header__container container max-width-lg">
+            <div class="header__logo">
+               <a href="#0">
+                  <svg width="104" height="30" viewBox="0 0 104 30">
+                     <title>Go to homepage</title>
+                     <path d="M37.54 24.08V3.72h4.92v16.37h8.47v4zM60.47 24.37a7.82 7.82 0 01-5.73-2.25 8.36 8.36 0 01-2-5.62 8.32 8.32 0 012.08-5.71 8 8 0 015.64-2.18 8.07 8.07 0 015.68 2.2 8.49 8.49 0 012 5.69 8.63 8.63 0 01-1.78 5.38 7.6 7.6 0 01-5.89 2.49zm0-3.67c2.42 0 2.73-3 2.73-4.23s-.31-4.26-2.73-4.26-2.79 3-2.79 4.26.32 4.23 2.82 4.23zM95.49 24.37a7.82 7.82 0 01-5.73-2.25 8.36 8.36 0 01-2-5.62 8.32 8.32 0 012.08-5.71 8.4 8.4 0 0111.31 0 8.43 8.43 0 012 5.69 8.6 8.6 0 01-1.77 5.38 7.6 7.6 0 01-5.89 2.51zm0-3.67c2.42 0 2.73-3 2.73-4.23s-.31-4.26-2.73-4.26-2.8 3-2.8 4.26.31 4.23 2.83 4.23zM77.66 30c-5.74 0-7-3.25-7.23-4.52l4.6-.26c.41.91 1.17 1.41 2.76 1.41a2.45 2.45 0 002.82-2.53v-2.68a7 7 0 01-1.7 1.75 6.12 6.12 0 01-5.85-.08c-2.41-1.37-3-4.25-3-6.66 0-.89.12-3.67 1.45-5.42a5.67 5.67 0 014.64-2.4c1.2 0 3 .25 4.46 2.82V8.81h4.85v15.33a5.2 5.2 0 01-2.12 4.32A9.92 9.92 0 0177.66 30zm.15-9.66c2.53 0 2.81-2.69 2.81-3.91s-.31-4-2.81-4-2.81 2.8-2.81 4 .27 3.91 2.81 3.91zM55.56 3.72h9.81v2.41h-9.81z" fill="var(--color-contrast-higher)"/>
+                     <circle cx="15" cy="15" r="15" fill="var(--color-primary)"/>
+                  </svg>
+               </a>
+            </div>
+            <button class="btn btn--subtle header__trigger js-header__trigger" aria-label="Toggle menu" aria-expanded="false" aria-controls="header-nav">
+            <i class="header__trigger-icon" aria-hidden="true"></i>
+            <span>Menu</span>
+            </button>
+            <nav class="header__nav js-header__nav" id="header-nav" role="navigation" aria-label="Main">
+               <div class="header__nav-inner">
+                  <div class="header__label">Main menu</div>
+                  <ul class="header__list">
+                    <li class="f-header__item"><a href="#0" class="f-header__link">
+                      <span>Solutions</span>
+                      <svg class="f-header__dropdown-icon icon" aria-hidden="true" viewBox="0 0 12 12">
+                        <path d="M6,9l4-5H2Z" /></svg>
+                    </a>
+          
+                    <ul class="f-header__dropdown">
+                      <li><a href="#0" class="f-header__dropdown-link">Heating</a></li>
+                      <li><a href="#0" class="f-header__dropdown-link">Cooling</a></li>
+                      <li><a href="#0" class="f-header__dropdown-link">Plumbing</a></li>
+                      <li><a href="#0" class="f-header__dropdown-link">Maintenance</a></li>
+                      <li><a href="#0" class="f-header__dropdown-link">More</a></li>
+                    </ul>
+                  </li>
+                     <li class="header__item"><a href="#0" class="header__link">About Us</a></li>
+                     <li class="header__item"><a href="#0" class="header__link">Resources</a></li>
+                     <li class="header__item"><a href="#0" class="header__link">Contact Us</a></li>
+                     <li class="header__item header__item--divider" aria-hidden="true"></li>
+                     <li class="header__item"><a href="tel:403-253-8181" class="btn btn--primary emrgency-button"><i class="fad fa-siren-on"></i> Emergency After Hours</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <main>
+         <section class="intro" style="background-image: url('https://source.unsplash.com/collection/10525657/1600x900');">
+            <div class="container max-width-adaptive-lg padding-y-xxl">
+               <div class="max-width-xs" style="background-color: rgba(255, 255, 255, 0.836); padding: 50px; border-radius: 20px;">
+                  <div class="text-sm opacity-60% margin-bottom-xxs">Welcome</div>
+                  <div class="text-component margin-bottom-sm" >
+                     <h1>Excel Air Mechanical</h1>
+                     <p>Servicing Calgary for over 40 years. 24 hours a day. 7 Days a week. 365 days a year.</p>
+                  </div>
+                  <div class="flex flex-wrap items-center gap-sm">
+                     <a href="/contact.html" class="btn btn--primary">Contact Us</a>
+                     <a href="#about" class="color-inherit">Learn more</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+         </div>
+        <section class="about-wrapper" id="about">
+          <div class="about-customer-logos" id="customer-logos">
+            <div class="container max-width-lg">
+              <div class="text-component text-center">
+                <p>Trusted by some of Calgary's leading companies.</p>
+              </div>
+          
+              <div class="margin-top-lg">
+                <ul class="customer-logos flex flex-wrap gap-lg flex-center">
+                  <li>
+                    <img src="assets/img/customer-logos/connelly.svg" alt="HVAC Calgary" height="50"/>
+                  </li>
+            
+                  <li>
+                    <img src="assets/img/customer-logos/fsr.svg" alt="Plumbing Calgary" height="70"/>
+                  </li>
+            
+                  <li>
+                    <svg class="customer-logos__logo" width="124" height="32" viewBox="0 0 124 32"><title>CompanyX</title><path d="M17,27A11,11,0,0,1,17,5V0a16,16,0,0,0,0,32Z"/><circle cx="17" cy="16" r="7"/><path d="M37.67,10.8a5.017,5.017,0,0,1,1.57.94L38.08,13.3a4.047,4.047,0,0,0-1.02-.59,3.087,3.087,0,0,0-1.1-.189q-2.381,0-2.38,3.619a4.411,4.411,0,0,0,.62,2.65,2.086,2.086,0,0,0,1.76.81,2.773,2.773,0,0,0,1.05-.19,4.773,4.773,0,0,0,1.05-.63l1.18,1.68a5.267,5.267,0,0,1-3.42,1.22,5.054,5.054,0,0,1-2.64-.67A4.4,4.4,0,0,1,31.46,19.1a6.643,6.643,0,0,1-.6-2.921,6.973,6.973,0,0,1,.6-2.97,4.613,4.613,0,0,1,1.72-2,4.792,4.792,0,0,1,2.62-.71A5.5,5.5,0,0,1,37.67,10.8Z"/><path d="M48.87,11.985a5.984,5.984,0,0,1,1.311,4.09,6.786,6.786,0,0,1-.6,2.93,4.548,4.548,0,0,1-1.72,1.97,4.922,4.922,0,0,1-2.66.7,4.635,4.635,0,0,1-3.66-1.49,5.981,5.981,0,0,1-1.319-4.11,6.721,6.721,0,0,1,.6-2.92,4.551,4.551,0,0,1,1.731-1.96,4.969,4.969,0,0,1,2.67-.7A4.6,4.6,0,0,1,48.87,11.985Zm-5.95,4.09a5.259,5.259,0,0,0,.57,2.771,2.082,2.082,0,0,0,3.42-.011,5.263,5.263,0,0,0,.57-2.76,5.208,5.208,0,0,0-.57-2.75,1.877,1.877,0,0,0-1.689-.889Q42.92,12.436,42.92,16.075Z"/><path d="M65.84,11.365a3.447,3.447,0,0,1,.76,2.35v7.66H64.04v-7.26q0-1.7-1.16-1.7a1.577,1.577,0,0,0-1.07.391,4.826,4.826,0,0,0-.93,1.21v7.359H58.32v-7.26q0-1.7-1.16-1.7a1.6,1.6,0,0,0-1.09.391,4.849,4.849,0,0,0-.93,1.21v7.359H52.58V10.8H54.8l.2,1.38a3.626,3.626,0,0,1,3.06-1.68,2.739,2.739,0,0,1,1.59.46,2.679,2.679,0,0,1,.99,1.32,4.534,4.534,0,0,1,1.381-1.33A3.43,3.43,0,0,1,63.8,10.5,2.573,2.573,0,0,1,65.84,11.365Z"/><path d="M78.01,11.955a7.377,7.377,0,0,1,.97,4.1,8.056,8.056,0,0,1-.49,2.909,4.417,4.417,0,0,1-1.44,1.99,3.617,3.617,0,0,1-2.25.72,3.3,3.3,0,0,1-2.66-1.16v4.94l-2.56.28V10.8h2.24l.14,1.3a3.928,3.928,0,0,1,1.41-1.2,3.687,3.687,0,0,1,1.651-.4A3.34,3.34,0,0,1,78.01,11.955Zm-1.71,4.12a5.735,5.735,0,0,0-.51-2.809,1.668,1.668,0,0,0-1.53-.851,1.983,1.983,0,0,0-1.17.391,3.445,3.445,0,0,0-.95,1.049v4.76a2.245,2.245,0,0,0,1.94,1.1Q76.3,19.715,76.3,16.075Z"/><path d="M89.51,19.485a1.215,1.215,0,0,0,.61.45l-.54,1.7a3.354,3.354,0,0,1-1.47-.43,2.181,2.181,0,0,1-.87-1.11,3.386,3.386,0,0,1-1.35,1.19,4.12,4.12,0,0,1-1.81.39,3.419,3.419,0,0,1-2.5-.9,3.154,3.154,0,0,1-.92-2.36,3.054,3.054,0,0,1,1.25-2.63,6,6,0,0,1,3.569-.91H86.8v-.6a1.821,1.821,0,0,0-.47-1.429,2.268,2.268,0,0,0-1.51-.41,8.93,8.93,0,0,0-2.8.559l-.6-1.74a10.7,10.7,0,0,1,3.84-.76q4.06,0,4.06,3.64v4.44A1.7,1.7,0,0,0,89.51,19.485Zm-2.71-.969V16.375H85.74q-2.479,0-2.48,1.84a1.7,1.7,0,0,0,.38,1.18,1.435,1.435,0,0,0,1.12.42A2.264,2.264,0,0,0,86.8,18.516Z"/><path d="M100.27,11.346a3.344,3.344,0,0,1,.79,2.369v7.66H98.5v-7.26a2.032,2.032,0,0,0-.33-1.32,1.217,1.217,0,0,0-.97-.38,1.9,1.9,0,0,0-1.19.41,4.681,4.681,0,0,0-1.031,1.191v7.359H92.42V10.8h2.22l.2,1.4a3.954,3.954,0,0,1,3.22-1.7A2.864,2.864,0,0,1,100.27,11.346Z"/><path d="M107.02,24.465a6.171,6.171,0,0,1-3.56,1.27l-.26-1.86a6.391,6.391,0,0,0,1.67-.45,2.712,2.712,0,0,0,1.01-.77,5.188,5.188,0,0,0,.7-1.28h-.88L102.34,10.8h2.72l2.3,8.88,2.4-8.88H112.4l-3.439,10.62A6.492,6.492,0,0,1,107.02,24.465Z"/><path d="M120.74,21.375l-2.761-5.66-2.739,5.66h-2.82l4-7.359-3.68-6.46h2.94l2.34,4.779,2.44-4.779h2.82l-3.7,6.359,4.1,7.46Z"/></svg>
+                  </li>
+            
+                  <li>
+                    <svg class="customer-logos__logo" width="40" height="40" viewBox="0 0 40 40"><title>CompanyY</title><path d="M32,4H8A4,4,0,0,0,4,8V32a4,4,0,0,0,4,4H32a4,4,0,0,0,4-4V8A4,4,0,0,0,32,4ZM29,29H11V11h6V23H29Zm0-12H23V11h6Z"/></svg>
+                  </li>
+            
+                  <li>
+                    <svg class="customer-logos__logo" width="124" height="32" viewBox="0 0 124 32"><title>CompanyX</title><path d="M17,27A11,11,0,0,1,17,5V0a16,16,0,0,0,0,32Z"/><circle cx="17" cy="16" r="7"/><path d="M37.67,10.8a5.017,5.017,0,0,1,1.57.94L38.08,13.3a4.047,4.047,0,0,0-1.02-.59,3.087,3.087,0,0,0-1.1-.189q-2.381,0-2.38,3.619a4.411,4.411,0,0,0,.62,2.65,2.086,2.086,0,0,0,1.76.81,2.773,2.773,0,0,0,1.05-.19,4.773,4.773,0,0,0,1.05-.63l1.18,1.68a5.267,5.267,0,0,1-3.42,1.22,5.054,5.054,0,0,1-2.64-.67A4.4,4.4,0,0,1,31.46,19.1a6.643,6.643,0,0,1-.6-2.921,6.973,6.973,0,0,1,.6-2.97,4.613,4.613,0,0,1,1.72-2,4.792,4.792,0,0,1,2.62-.71A5.5,5.5,0,0,1,37.67,10.8Z"/><path d="M48.87,11.985a5.984,5.984,0,0,1,1.311,4.09,6.786,6.786,0,0,1-.6,2.93,4.548,4.548,0,0,1-1.72,1.97,4.922,4.922,0,0,1-2.66.7,4.635,4.635,0,0,1-3.66-1.49,5.981,5.981,0,0,1-1.319-4.11,6.721,6.721,0,0,1,.6-2.92,4.551,4.551,0,0,1,1.731-1.96,4.969,4.969,0,0,1,2.67-.7A4.6,4.6,0,0,1,48.87,11.985Zm-5.95,4.09a5.259,5.259,0,0,0,.57,2.771,2.082,2.082,0,0,0,3.42-.011,5.263,5.263,0,0,0,.57-2.76,5.208,5.208,0,0,0-.57-2.75,1.877,1.877,0,0,0-1.689-.889Q42.92,12.436,42.92,16.075Z"/><path d="M65.84,11.365a3.447,3.447,0,0,1,.76,2.35v7.66H64.04v-7.26q0-1.7-1.16-1.7a1.577,1.577,0,0,0-1.07.391,4.826,4.826,0,0,0-.93,1.21v7.359H58.32v-7.26q0-1.7-1.16-1.7a1.6,1.6,0,0,0-1.09.391,4.849,4.849,0,0,0-.93,1.21v7.359H52.58V10.8H54.8l.2,1.38a3.626,3.626,0,0,1,3.06-1.68,2.739,2.739,0,0,1,1.59.46,2.679,2.679,0,0,1,.99,1.32,4.534,4.534,0,0,1,1.381-1.33A3.43,3.43,0,0,1,63.8,10.5,2.573,2.573,0,0,1,65.84,11.365Z"/><path d="M78.01,11.955a7.377,7.377,0,0,1,.97,4.1,8.056,8.056,0,0,1-.49,2.909,4.417,4.417,0,0,1-1.44,1.99,3.617,3.617,0,0,1-2.25.72,3.3,3.3,0,0,1-2.66-1.16v4.94l-2.56.28V10.8h2.24l.14,1.3a3.928,3.928,0,0,1,1.41-1.2,3.687,3.687,0,0,1,1.651-.4A3.34,3.34,0,0,1,78.01,11.955Zm-1.71,4.12a5.735,5.735,0,0,0-.51-2.809,1.668,1.668,0,0,0-1.53-.851,1.983,1.983,0,0,0-1.17.391,3.445,3.445,0,0,0-.95,1.049v4.76a2.245,2.245,0,0,0,1.94,1.1Q76.3,19.715,76.3,16.075Z"/><path d="M89.51,19.485a1.215,1.215,0,0,0,.61.45l-.54,1.7a3.354,3.354,0,0,1-1.47-.43,2.181,2.181,0,0,1-.87-1.11,3.386,3.386,0,0,1-1.35,1.19,4.12,4.12,0,0,1-1.81.39,3.419,3.419,0,0,1-2.5-.9,3.154,3.154,0,0,1-.92-2.36,3.054,3.054,0,0,1,1.25-2.63,6,6,0,0,1,3.569-.91H86.8v-.6a1.821,1.821,0,0,0-.47-1.429,2.268,2.268,0,0,0-1.51-.41,8.93,8.93,0,0,0-2.8.559l-.6-1.74a10.7,10.7,0,0,1,3.84-.76q4.06,0,4.06,3.64v4.44A1.7,1.7,0,0,0,89.51,19.485Zm-2.71-.969V16.375H85.74q-2.479,0-2.48,1.84a1.7,1.7,0,0,0,.38,1.18,1.435,1.435,0,0,0,1.12.42A2.264,2.264,0,0,0,86.8,18.516Z"/><path d="M100.27,11.346a3.344,3.344,0,0,1,.79,2.369v7.66H98.5v-7.26a2.032,2.032,0,0,0-.33-1.32,1.217,1.217,0,0,0-.97-.38,1.9,1.9,0,0,0-1.19.41,4.681,4.681,0,0,0-1.031,1.191v7.359H92.42V10.8h2.22l.2,1.4a3.954,3.954,0,0,1,3.22-1.7A2.864,2.864,0,0,1,100.27,11.346Z"/><path d="M107.02,24.465a6.171,6.171,0,0,1-3.56,1.27l-.26-1.86a6.391,6.391,0,0,0,1.67-.45,2.712,2.712,0,0,0,1.01-.77,5.188,5.188,0,0,0,.7-1.28h-.88L102.34,10.8h2.72l2.3,8.88,2.4-8.88H112.4l-3.439,10.62A6.492,6.492,0,0,1,107.02,24.465Z"/><path d="M120.74,21.375l-2.761-5.66-2.739,5.66h-2.82l4-7.359-3.68-6.46h2.94l2.34,4.779,2.44-4.779h2.82l-3.7,6.359,4.1,7.46Z"/></svg>
+                  </li>
+            
+                  <li>
+                    <svg class="customer-logos__logo" width="40" height="40" viewBox="0 0 40 40"><title>CompanyY</title><path d="M32,4H8A4,4,0,0,0,4,8V32a4,4,0,0,0,4,4H32a4,4,0,0,0,4-4V8A4,4,0,0,0,32,4ZM29,29H11V11h6V23H29Zm0-12H23V11h6Z"/></svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="slideshow js-slideshow slideshow--transition-slide testimonial-slideshow" data-swipe="on">
+            <p class="sr-only">Slideshow Items</p>
+            
+            <ul class="slideshow__content">
+              <li class="slideshow__item bg-contrast-lower text-center js-slideshow__item">
+                <div class="flex flex-center height-100%">
+                  <div class="max-width-sm">
+                    <figure class="testimonial-slideshow__profile-img radius-50% border border-2 border-bg margin-x-auto margin-bottom-sm" aria-hidden="true">
+                      <img src="assets/img/customer-logos/colleen.jpg" alt="Colleen Connelly">
+                    </figure>
+          
+                    <blockquote class="text-lg@md line-height-md">
+                      <p>&#34;We have trusted Esxcel Air in our condo's and in our homes for 20+ years. Their after hours service is always dependable. We know we can always count on the team at Excel Air.&#34;</p>
+                    </blockquote>
+          
+                    <footer class="margin-top-md">
+                      <cite class="text-sm">
+                        <strong>Colleen Connelly</strong> 
+                        <span class="block color-contrast-medium margin-top-xxxxs">Owner: Connelly & Company Property Management</span>
+                      </cite>
+                    </footer>
+                  </div>
+                </div>
+              </li>
+              
+              <li class="slideshow__item bg-contrast-lower text-center js-slideshow__item">
+                <div class="flex flex-center height-100%">
+                  <div class="max-width-sm">
+                    <figure class="testimonial-slideshow__profile-img radius-50% border border-2 border-bg margin-x-auto margin-bottom-sm" aria-hidden="true">
+                      <img src="../../../app/assets/img/testimonials-img-2.svg" alt="James Powell">
+                    </figure>
+          
+                    <blockquote class="text-lg@md line-height-md">
+                      <p>&#34;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, ducimus velit culpa ex blanditiis maxime minus quas.&#34;</p>
+                    </blockquote>
+                    
+                    <footer class="margin-top-md">
+                      <cite class="text-sm">
+                        <strong>James Powell</strong>
+                        <span class="block color-contrast-medium margin-top-xxxxs">Developer at CompanyY</span>
+                      </cite>
+                    </footer>
+                  </div>
+                </div>
+              </li>
+              
+              <li class="slideshow__item bg-contrast-lower text-center js-slideshow__item">
+                <div class="flex flex-center height-100%">
+                  <div class="max-width-sm">
+                    <figure class="testimonial-slideshow__profile-img radius-50% border border-2 border-bg margin-x-auto margin-bottom-sm" aria-hidden="true">
+                      <img src="../../../app/assets/img/testimonials-img-3.svg" alt="Olivia Gribben">
+                    </figure>
+          
+                    <blockquote class="text-lg@md line-height-md">
+                      <p>&#34;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi veniam maiores eum!&#34;</p>
+                    </blockquote>
+                    
+                    <footer class="margin-top-md">
+                      <cite class="text-sm">
+                        <strong>Olivia Gribben</strong> 
+                        <span class="block color-contrast-medium margin-top-xxxxs">CEO at CompanyZ</span>
+                      </cite>
+                    </footer>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          
+            <ul>
+              <li class="slideshow__control js-slideshow__control">
+                <button class="reset slideshow__btn js-tab-focus">
+                  <svg class="icon" viewBox="0 0 32 32"><title>Show previous slide</title><path d="M20.768,31.395L10.186,16.581c-0.248-0.348-0.248-0.814,0-1.162L20.768,0.605l1.627,1.162L12.229,16 l10.166,14.232L20.768,31.395z"></path></svg>
+                </button>
+              </li>
+          
+              <li class="slideshow__control js-slideshow__control">
+                <button class="reset slideshow__btn js-tab-focus">
+                  <svg class="icon" viewBox="0 0 32 32"><title>Show next slide</title><path d="M11.232,31.395l-1.627-1.162L19.771,16L9.605,1.768l1.627-1.162l10.582,14.813 c0.248,0.348,0.248,0.814,0,1.162L11.232,31.395z"></path></svg>
+                </button>
+              </li>
             </ul>
           </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="intro" style="background-image: url('https://source.unsplash.com/collection/10525657/1600x900');">
-        <div class="container max-width-adaptive-lg padding-y-xxl">
-          <div class="max-width-xs" style="background-color: rgba(255, 255, 255, 0.596); padding: 50px; border-radius: 20px;">
-            <div class="text-sm opacity-60% margin-bottom-xxs">This is a Label</div>
-    
-            <div class="text-component margin-bottom-sm" >
-              <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam vero aliquam, natus quae architecto hic quod!</p>
-            </div>
-    
-            <div class="flex flex-wrap items-center gap-sm">
-              <a href="#0" class="btn btn--primary">Download</a>
-              <a href="#0" class="color-inherit">Learn more</a>
+        </section>
+        <section class="loop-tabs padding-y-lg js-loop-tabs" id="services-use-cases">
+          <div class="container max-width-adaptive-md">
+            <div class="grid gap-md flex-row-reverse@md">
+              <div class="loop-tabs__content col-6@md flex flex-column flex-column-reverse@md justify-center@md text-center text-left@md">
+                <ul class="loop-tabs__controls js-loop-tabs__controls margin-bottom-lg margin-bottom-0@lg flex flex-center flex-wrap flex-column@md items-start@md">
+                  <li>
+                    <a href="#timingTab1Panel1" class="loop-tabs__control loop-tabs__control--selected text-sm padding-md">Multi Family</a>
+                  </li>
+        
+                  <li>
+                    <a href="#timingTab1Panel2" class="loop-tabs__control text-sm padding-md">Commercial & Industrial</a>
+                  </li>
+        
+                  <li>
+                    <a href="#timingTab1Panel3" class="loop-tabs__control text-sm padding-md">Residential</a>
+                  </li>
+                </ul>
+          
+                <div class="loop-tabs__panels js-loop-tabs__panels margin-bottom-md">
+                  <section id="timingTab1Panel1" class="loop-tabs__panel js-loop-tabs__panel text-component loop-tabs__panel--selected">
+                    <h1>Multi Family</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, aperiam!</p>
+                    <a href="/services/multi-family.html" class="btn btn--primary">More</a>
+                  </section>
+          
+                  <section id="timingTab1Panel2" class="loop-tabs__panel js-loop-tabs__panel text-component">
+                    <h1>Commercial/Industrial</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, aperiam!</p>
+                    <a href="/services/multi-family.html" class="btn btn--primary">More</a>
+                  </section>
+          
+                  <section id="timingTab1Panel3" class="loop-tabs__panel js-loop-tabs__panel text-component">
+                    <h1>Residential</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident.</p>
+                    <a href="/services/multi-family.html" class="btn btn--primary">More</a>
+
+                  </section>
+                </div>
+              </div>
+          
+              <div class="loop-tabs__media col-6@md" aria-hidden="true">
+                <ul class="loop-tabs__assets js-loop-tabs__assets">
+                  <li class="loop-tabs__asset loop-tabs__asset--selected">
+                    <img src="https://images.unsplash.com/photo-1603601048845-c06ef1086f7f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" alt="Heating and Cooling For Condos and Apartments">
+                  </li>
+          
+                  <li class="loop-tabs__asset">
+                    <img src="https://images.unsplash.com/photo-1461694901205-be808d220b0a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=668&q=80" alt="Commercial and Industrial Heating and Cooling">
+                  </li>
+          
+                  <li class="loop-tabs__asset">
+                    <img src="https://images.unsplash.com/photo-1600667397978-f60543d5395e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" alt="Residential HVAC Calgary">
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
+        </section>
+        <section class="has-section-divider-bottom bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1601186026468-de8ee8169986?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80');" id="services">
+          <div class="padding-y-xxl">
+            <div class="container max-width-adaptive-sm">
+              <div class="text-component">
+                              
+              </div>
+            </div>
+          </div>
+        
+          <svg class="section-divider" viewBox="0 0 1920 60" aria-hidden="true"><path fill="var(--color-bg)" d="M-153.5,85.5a4002.033,4002.033,0,0,1,658-71c262.854-6.5,431.675,15.372,600,27,257.356,17.779,624.828,19.31,1089-58v102Z"/></svg>
+        </section>
+        <section class="feature-v7" id="serviceslist">
+          <div class="container max-width-adaptive-lg">
+            <div class="grid gap-md">
+              <div class="col-6@md">
+                <div class="feature-v7__item flex gap-sm">
+                  <figure>
+                    <i class="fad fa-heat"></i>
+                  </figure>
+            
+                  <div class="text-component">
+                    <h4>Heating</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium assumenda doloribus eos provident modi.</p>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-6@md">
+                <div class="feature-v7__item flex gap-sm">
+                  <figure>
+                    <i class="fad fa-fan"></i>
+                  </figure>
+            
+                  <div class="text-component">
+                    <h4>Cooling</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio inventore architecto.</p>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-6@md">
+                <div class="feature-v7__item flex gap-sm">
+                  <figure>
+                    <i class="fad fa-toilet"></i>
+                  </figure>
+            
+                  <div class="text-component">
+                    <h4>Plumbing</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium assumenda doloribus eos provident modi.</p>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-6@md">
+                <div class="feature-v7__item flex gap-sm">
+                  <figure>
+                    <i class="fad fa-siren-on"></i>
+                  </figure>
+            
+                  <div class="text-component">
+                    <h4>Emergency Service</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio inventore architecto.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg radius-lg shadow-xs overflow-hidden padding-component call-to-action" id="cta1">
+          <div class="grid gap-md items-center">
+            <div class="col-6@md">
+              <div class="text-component text-center">
+                <h1 class="text-xl" style="color: white;">Banner Title</h1>
+                <p class="color-contrast-medium" style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="flex flex-wrap flex-center gap-sm">
+                  <a href="#0" class="btn btn--primary">Get A Free Quote</a>
+                </p>
+              </div>
+            </div>
+          
+            <div class="col-6@md">
+              <figure class="width-100%">
+                <img class="block width-100%" src="assets/img/images/thisthing.svg" alt="Placeholder" height="300" width="300">
+              </figure>
+            </div>
+          </div>
+        </section>
+        <section class="diagonal-section bg-contrast-lower" style="background-image: url('https://images.unsplash.com/photo-1556847375-474dd8f11506?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80');">
+          <div class="container max-width-adaptive-sm padding-y-xxl">
+            <div class="text-center">
+              <div class="text-sm opacity-60% margin-bottom-xxs" style="color: white;">This is a Label</div>
+        
+              <div class="text-component margin-bottom-sm">
+                <h1 style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam vero aliquam, natus quae architecto hic quod!</p>
+              </div>
+          
+        
+            </div>
+          </div>
+        </section>
+        <section class="form-wrapper" id="contact">
+          <form class="form-template-v3">
+            <fieldset class="margin-bottom-md padding-bottom-md border-bottom">
+              <div class="text-component margin-bottom-md text-center">
+                <h2>Contact us.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+          
+              <div class="margin-bottom-xs">
+                <div class="grid gap-xxs items-center@md">
+                  <div class="col-4@md">
+                    <label class="form-label" for="firstName">First name</label>
+                  </div>
+                  
+                  <div class="col-8@md">
+                    <input class="form-control width-100%" type="text" name="firstName" id="firstName" required>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="margin-bottom-xs">
+                <div class="grid gap-xxs items-center@md">
+                  <div class="col-4@md">
+                    <label class="form-label" for="lastName">Last name</label>
+                  </div>
+                  
+                  <div class="col-8@md">
+                    <input class="form-control width-100%" type="text" name="lastName" id="lastName" required>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="margin-bottom-xs">
+                <div class="grid gap-xxs items-center@md">
+                  <div class="col-4@md">
+                    <label class="form-label" for="inputEmail">Email</label>
+                  </div>
+                  
+                  <div class="col-8@md">
+                    <input class="form-control width-100%" type="email" name="inputEmail" id="inputEmail" required>
+                  </div>
+                </div>
+              </div>
+          
+              <div>
+                <div class="grid gap-xxs items-center@md">
+                  <div class="col-4@md">
+                    <label class="form-label" for="textarea">Textarea</label>
+                    <p class="text-xs color-contrast-medium margin-top-xxxxs">Optional</p>
+                  </div>
+                  
+                  <div class="col-8@md">
+                    <textarea class="form-control width-100%" name="textarea" id="textarea"></textarea>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          
+            <fieldset class="margin-bottom-md padding-bottom-md border-bottom">
+              <div class="text-component margin-bottom-md text-center">
+                <h2>Radios and Checkboxes</h2>
+              </div>
+          
+              <div class="margin-bottom-md">
+                <div class="grid gap-xxs items-center@md">
+                  <div class="col-4@md">
+                    <div class="form-label">Make a choice</div>
+                  </div>
+            
+                  <div class="col-8@md">
+                    <ul class="flex flex-wrap gap-md">
+                      <li>
+                        <input class="radio" type="radio" name="radioButton" id="radio1" checked>
+                        <label for="radio1">Option 1</label>
+                      </li>
+                
+                      <li>
+                        <input class="radio" type="radio" name="radioButton" id="radio2">
+                        <label for="radio2">Option 2</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          
+              <div>
+                <div class="grid gap-xxs items-center@md">
+                  <div class="col-4@md">
+                    <div class="form-label">Choose 1+ options</div>
+                  </div>
+            
+                  <div class="col-8@md">
+                    <ul class="flex flex-wrap gap-md">
+                      <li>
+                        <input class="checkbox" type="checkbox" id="checkbox1">
+                        <label for="checkbox1">Option 1</label>
+                      </li>
+                
+                      <li>
+                        <input class="checkbox" type="checkbox" id="checkbox2">
+                        <label for="checkbox2">Option 2</label>
+                      </li>
+          
+                      <li>
+                        <input class="checkbox" type="checkbox" id="checkbox3">
+                        <label for="checkbox3">Option 3</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          
+            <div class="text-right">
+              <button class="btn btn--primary">Submit</button>
+            </div>
+          </form>
+        </section>
+      </main>
+      <footer class="footer-v3 padding-y-lg">
+        <div class="footer-v3__container container max-width-lg">
+          <div class="footer-v3__logo">
+            <a href="#0">
+              <svg width="104" height="30" viewBox="0 0 104 30"><title>Go to homepage</title><path d="M37.54 24.08V3.72h4.92v16.37h8.47v4zM60.47 24.37a7.82 7.82 0 01-5.73-2.25 8.36 8.36 0 01-2-5.62 8.32 8.32 0 012.08-5.71 8 8 0 015.64-2.18 8.07 8.07 0 015.68 2.2 8.49 8.49 0 012 5.69 8.63 8.63 0 01-1.78 5.38 7.6 7.6 0 01-5.89 2.49zm0-3.67c2.42 0 2.73-3 2.73-4.23s-.31-4.26-2.73-4.26-2.79 3-2.79 4.26.32 4.23 2.82 4.23zM95.49 24.37a7.82 7.82 0 01-5.73-2.25 8.36 8.36 0 01-2-5.62 8.32 8.32 0 012.08-5.71 8.4 8.4 0 0111.31 0 8.43 8.43 0 012 5.69 8.6 8.6 0 01-1.77 5.38 7.6 7.6 0 01-5.89 2.51zm0-3.67c2.42 0 2.73-3 2.73-4.23s-.31-4.26-2.73-4.26-2.8 3-2.8 4.26.31 4.23 2.83 4.23zM77.66 30c-5.74 0-7-3.25-7.23-4.52l4.6-.26c.41.91 1.17 1.41 2.76 1.41a2.45 2.45 0 002.82-2.53v-2.68a7 7 0 01-1.7 1.75 6.12 6.12 0 01-5.85-.08c-2.41-1.37-3-4.25-3-6.66 0-.89.12-3.67 1.45-5.42a5.67 5.67 0 014.64-2.4c1.2 0 3 .25 4.46 2.82V8.81h4.85v15.33a5.2 5.2 0 01-2.12 4.32A9.92 9.92 0 0177.66 30zm.15-9.66c2.53 0 2.81-2.69 2.81-3.91s-.31-4-2.81-4-2.81 2.8-2.81 4 .27 3.91 2.81 3.91zM55.56 3.72h9.81v2.41h-9.81z" fill="var(--color-contrast-higher)"/><circle cx="15" cy="15" r="15" fill="var(--color-primary)"/></svg>
+            </a>
+          </div>
+      
+          <nav class="footer-v3__nav">
+            <ul class="footer-v3__nav-list">
+              <li class="footer-v3__nav-item"><a href="#0">Pricing</a></li>
+              <li class="footer-v3__nav-item"><a href="#0">Documentation</a></li>
+              <li class="footer-v3__nav-item"><a href="#0">Help center</a></li>
+              <li class="footer-v3__nav-item"><a href="#0">Company</a></li>
+            </ul>
+          </nav>
+      
+          <div class="footer-v3__socials">
+            <a href="#0">
+              <svg class="icon" viewBox="0 0 16 16"><title>Follow us on Twitter</title><g><path d="M16,3c-0.6,0.3-1.2,0.4-1.9,0.5c0.7-0.4,1.2-1,1.4-1.8c-0.6,0.4-1.3,0.6-2.1,0.8c-0.6-0.6-1.5-1-2.4-1 C9.3,1.5,7.8,3,7.8,4.8c0,0.3,0,0.5,0.1,0.7C5.2,5.4,2.7,4.1,1.1,2.1c-0.3,0.5-0.4,1-0.4,1.7c0,1.1,0.6,2.1,1.5,2.7 c-0.5,0-1-0.2-1.5-0.4c0,0,0,0,0,0c0,1.6,1.1,2.9,2.6,3.2C3,9.4,2.7,9.4,2.4,9.4c-0.2,0-0.4,0-0.6-0.1c0.4,1.3,1.6,2.3,3.1,2.3 c-1.1,0.9-2.5,1.4-4.1,1.4c-0.3,0-0.5,0-0.8,0c1.5,0.9,3.2,1.5,5,1.5c6,0,9.3-5,9.3-9.3c0-0.1,0-0.3,0-0.4C15,4.3,15.6,3.7,16,3z"></path></g></svg>
+            </a>
+      
+            <a href="#0">
+              <svg class="icon" viewBox="0 0 16 16"><title>Follow us on Youtube</title><g><path d="M15.8,4.8c-0.2-1.3-0.8-2.2-2.2-2.4C11.4,2,8,2,8,2S4.6,2,2.4,2.4C1,2.6,0.3,3.5,0.2,4.8C0,6.1,0,8,0,8 s0,1.9,0.2,3.2c0.2,1.3,0.8,2.2,2.2,2.4C4.6,14,8,14,8,14s3.4,0,5.6-0.4c1.4-0.3,2-1.1,2.2-2.4C16,9.9,16,8,16,8S16,6.1,15.8,4.8z M6,11V5l5,3L6,11z"></path></g></svg>
+            </a>
+      
+            <a href="#0">
+              <svg class="icon" viewBox="0 0 16 16"><title>Follow us on Github</title><g><path  d="M8,0.2c-4.4,0-8,3.6-8,8c0,3.5,2.3,6.5,5.5,7.6 C5.9,15.9,6,15.6,6,15.4c0-0.2,0-0.7,0-1.4C3.8,14.5,3.3,13,3.3,13c-0.4-0.9-0.9-1.2-0.9-1.2c-0.7-0.5,0.1-0.5,0.1-0.5 c0.8,0.1,1.2,0.8,1.2,0.8C4.4,13.4,5.6,13,6,12.8c0.1-0.5,0.3-0.9,0.5-1.1c-1.8-0.2-3.6-0.9-3.6-4c0-0.9,0.3-1.6,0.8-2.1 c-0.1-0.2-0.4-1,0.1-2.1c0,0,0.7-0.2,2.2,0.8c0.6-0.2,1.3-0.3,2-0.3c0.7,0,1.4,0.1,2,0.3c1.5-1,2.2-0.8,2.2-0.8 c0.4,1.1,0.2,1.9,0.1,2.1c0.5,0.6,0.8,1.3,0.8,2.1c0,3.1-1.9,3.7-3.7,3.9C9.7,12,10,12.5,10,13.2c0,1.1,0,1.9,0,2.2 c0,0.2,0.1,0.5,0.6,0.4c3.2-1.1,5.5-4.1,5.5-7.6C16,3.8,12.4,0.2,8,0.2z"></path></g></svg>
+            </a>
+          </div>
         </div>
-      </section>
-    </div>
-    <section class="padding-y-xxl position-relative z-index-1" id="services">
-      <div class="container max-width-adaptive-xl position-relative z-index-2">
-        <div class="text-sm opacity-60% margin-bottom-xxs">Services</div>
-    
-        <div class="text-component margin-bottom-sm">
-          <h1>Residential | Industrial | Multi Family And More</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam vero aliquam, natus quae architecto hic quod!
-          </p>
-        </div>
-    
-        <div class="flex flex-wrap items-center gap-sm">
-          <a href="#0" class="btn btn--primary">Get A Free Quote</a>
-          <a href="#0" class="color-inherit">Learn more</a>
-        </div>
-      </div>
-    
-      <figure class="bg-decoration z-index-1" aria-hidden="true">
-        <svg class="bg-decoration__svg color-contrast-low" viewBox="0 0 1920 450" fill="none">
-          <rect opacity="0.5" x="1952.45" y="45.1172" width="175.38" height="1451.58"
-            transform="rotate(99.6416 1952.45 45.1172)" fill="url(#bg-decoration-v1-fx-6-linear-1)" />
-          <circle opacity="0.5" r="38" transform="matrix(-1 0 0 1 1583 171)" fill="url(#bg-decoration-v1-fx-6-radial-1)" />
-          <path opacity="0.5" d="M1338 187L1679.53 -0.113281L1416.47 -78.0066L1338 187Z" fill="url(#bg-decoration-v1-fx-6-linear-2)" />
-          <path opacity="0.5" d="M1683.59 291L1612.88 413.475L1709.47 387.593L1683.59 291Z" fill="url(#bg-decoration-v1-fx-6-linear-3)" />
-          <defs>
-            <linearGradient id="bg-decoration-v1-fx-6-linear-1" x1="2040.14" y1="45.1172" x2="2040.14" y2="1496.7"
-              gradientUnits="userSpaceOnUse">
-              <stop stop-color="currentColor" stop-opacity="0" />
-              <stop offset="1" stop-color="currentColor" />
-            </linearGradient>
-            <radialGradient id="bg-decoration-v1-fx-6-radial-1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-              gradientTransform="scale(38)">
-              <stop stop-color="var(--color-primary)" stop-opacity="0" />
-              <stop offset="1" stop-color="var(--color-primary)" />
-            </radialGradient>
-            <linearGradient id="bg-decoration-v1-fx-6-linear-2" x1="1640.29" y1="132.39" x2="1377.23" y2="54.4967"
-              gradientUnits="userSpaceOnUse">
-              <stop stop-color="currentColor" />
-              <stop offset="1" stop-color="currentColor" stop-opacity="0" />
-            </linearGradient>
-            <linearGradient id="bg-decoration-v1-fx-6-linear-3" x1="1599.94" y1="365.178" x2="1696.53" y2="339.296"
-              gradientUnits="userSpaceOnUse">
-              <stop stop-color="currentColor" />
-              <stop offset="1" stop-color="currentColor" stop-opacity="0" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </figure>
-    </section>
-  </main>
-<script src="assets/js/scripts.js"></script>
-</body>
+      </footer>
+      <!--BACK TO TOP-->
+      <a class="back-to-top js-back-to-top" href="#" data-offset="100" data-duration="300">
+        <svg class="icon" viewBox="0 0 16 16"><title>Go to top of page</title><g stroke-width="1" stroke="currentColor"><polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="15.5,11.5 8,4 0.5,11.5 "></polyline></g></svg>
+      </a>
+      <script src="assets/js/scripts.js"></script>
+   </body>
 </html>
