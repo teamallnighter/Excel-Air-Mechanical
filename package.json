@@ -1,6 +1,8 @@
 {
   "name": "excel-air-mechanical",
   "version": "0.0.1",
+  "homepage": "https://portfolio.chrisconnelly.dev",
+  "description": "A simple website for an HVAC company in Calgary",
   "scripts": {
     "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,5 +25,15 @@
     "gulp-uglify": "^3.0.2",
     "postcss-calc": "^7.0.1",
     "postcss-css-variables": "git+https://github.com/CodyHouse/postcss-css-variables"
+  },
+  "keywords": [
+    "node",
+    "codyhouse",
+    "SASS"
+  ],
+  "author": "Chris Connelly",
+  "license": "MIT",
+  "dependencies": {
+    "font-awesome-animation": "^0.2.1"
   }
 }
