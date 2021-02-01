@@ -58,3 +58,7 @@
 .about-history{
     margin: 20vh 15vw;
 }
+
+.hidden{
+    display: none;
+}
